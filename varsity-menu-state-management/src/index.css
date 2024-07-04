@@ -1,0 +1,25 @@
+html {
+  font-family: 'Boogaloo', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #fdefdb, #fdfdfd);
+  border: 10px dotted red;
+  padding: 30px;
+  padding-bottom: 50px;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

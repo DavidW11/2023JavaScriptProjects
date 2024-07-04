@@ -1,0 +1,30 @@
+*{
+    font-family: 'papyrus';
+}
+.body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(47, 174, 216);
+}
+.split-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(161, 207, 223);
+    margin: 20px;
+    width: 50vw;
+    height: 80vh;
+}
+button{
+    width: 50%;
+    align-items: center;
+    align-self: center;
+    background-color: rgb(244, 219, 135);
+}
+button:hover{
+    transform: scale(1.1); 
+    background-color: rgb(242, 226, 11);
+}

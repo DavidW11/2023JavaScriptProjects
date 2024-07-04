@@ -1,0 +1,164 @@
+h1 {
+  font-size: 48px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+h1 > img {
+  width: 100px;
+}
+
+p {
+  font-size: 24px;
+}
+
+button.show-receipt {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px 15px;
+  background: red;
+  color: white;
+  border-radius: 10px;
+}
+
+.receipt {
+  background: white;
+  position: fixed;
+  top: 100vh;
+  height: 70vh;
+  left: 20vw;
+  right: 20vw;
+  padding: 10px 30px;
+  transition: transform 0.3s;
+  z-index: 9;
+  box-shadow: 0 0 10px grey;
+}
+
+.receipt > h2 {
+  text-align: center;
+  color: red;
+  font-size: 36px;
+}
+
+.receipt-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.receipt-item > dt,
+.receipt-item > dd {
+  font-size: 26px;
+}
+
+.receipt.showing {
+  transform: translateY(-70vh);
+}
+
+.combo-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.combo-banner > p,
+.combo-banner > div {
+  max-width: 300px;
+  min-width: 250px;
+  flex: 1;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.special-deal {
+  display: flex;
+}
+
+.special-deal-star {
+  position: relative;
+  color: red;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.special-deal-star:before {
+  content: '\2605'; /* the star symbol */
+  position: absolute;
+  font-size: 70px;
+  top: -32px;
+  left: -15px;
+  transform: rotate(10deg);
+  color: #e1cb55;
+  z-index: -1;
+}
+
+.menu-item {
+  box-shadow: 0 2px 5px grey;
+  padding: 10px 20px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-basis: 400px;
+  margin: 15px;
+  background: rgb(253, 253, 253, 0.7);
+}
+
+.menu-item.selected {
+  background-color: yellow;
+}
+
+.menu-item > img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.menu-item:before {
+  counter-increment: item-number;
+  content: counter(item-number);
+  color: white;
+  background: black;
+  border-radius: 100%;
+  padding: 5px 10px;
+  align-self: center;
+  margin-left: -35px;
+  margin-right: 10px;
+}
+
+.red {
+  color: red;
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1000px;
+  counter-reset: item-number;
+}
+
+dt {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+dd {
+  font-size: 18px;
+  margin-left: auto;
+}
+
+.varsity-logo {
+  position: absolute;
+  width: 100px;
+  top: 30px;
+  right: 30px;
+  border-radius: 10px;
+}
